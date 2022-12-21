@@ -23,42 +23,36 @@ of what each of the values mean.
  */
 
 export const info = {
-    firstName: "John",
-    lastName: "Smith",
-    initials: "js", // the example uses first and last, but feel free to use three or more if you like.
-    position: "a Full Stack Developer",
+    firstName: "Leo",
+    lastName: "Souquet",
+    initials: "LS", // the example uses first and last, but feel free to use three or more if you like.
+    position: "Lead Data Scientist",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
         {
             emoji: '☕',
-            text: 'fueled by coffee'
+            text: 'Passionate about AI'
         },
         {
             emoji: '🌎',
-            text: 'based in the US'
+            text: 'based in the France'
         },
         {
             emoji: "💼",
-            text: "Systems Engineer at Google"
+            text: "Computer Vision Specialist"
+        },
+        {
+            emoji: "💼",
+            text: "Serial Entrepreneur"
         },
         {
             emoji: "📧",
-            text: "johnsmith@gmail.com"
+            text: "souquet.leo@gmail.com"
         }
     ],
     socials: [
-        {
-            link: "https://facebook.com",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
-        {
-            link: "https://instagram.com",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
-        },
         {
             link: "https://github.com",
             icon: "fa fa-github",
@@ -105,6 +99,7 @@ export const info = {
 // Same as above, change the emojis to match / relate to your hobbies or interests.
 // You can also remove the emojis if you'd like, I just think they look cute :P
     ],
+
     portfolio: [ // This is where your portfolio projects will be detailed
         {
             title: "Project 1",
@@ -135,6 +130,24 @@ export const info = {
             live: "https://paytonpierce.dev",
             source: "https://github.com/paytonjewell",
             image: mock5
+        },
+        {
+            title: "Project 6",
+            live: "https://paytonpierce.dev",
+            source: "https://github.com/paytonjewell",
+            image: mock5
         }
+    ],
+
+    publications: [ // This is where your portfolio projects will be detailed
+        {
+            title: "Publie 1",
+            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+        },
+        {
+            title: "Publie 2",
+            live: "https://paytonpierce.dev",
+            source: "https://github.com/paytonjewell"        }
     ]
 }

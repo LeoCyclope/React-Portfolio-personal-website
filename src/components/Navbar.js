@@ -26,6 +26,11 @@ const links = [
         name: 'Portfolio',
         to: '/portfolio',
         active: 'portfolio'
+    },
+    {
+        name: 'publications',
+        to: '/publications',
+        active: 'publications'
     }
 ]
 

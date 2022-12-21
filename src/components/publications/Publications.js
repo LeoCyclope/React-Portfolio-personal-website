@@ -3,10 +3,9 @@ import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 import Stack from '@mui/material/Stack';
 
-
 export default function Publications() {
     return (
-        <Box sx={{ flexGrow: 1, paddingTop: 5 }} display={'flex'} flexDirection={'column'} justifyContent={'left'} alignItems={'center'} textAlign={'left'} >
+        <Box sx={{ flexGrow: 1, paddingTop: 5 }} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} textAlign={'left'} >
         
         <Stack spacing={2}
           justifyContent="left"
@@ -24,14 +23,8 @@ export default function Publications() {
                   </Box>
                      
                   ))}
-              </Stack>
 
-
-              <Stack spacing={2}
-          justifyContent="left"
-          alignItems="left"
-          sx={{ paddingTop: 5 }}>
-                <h1 style={{fontSize: '2rem'}}>{"Conferences"}</h1>
+                <h1 style={{fontSize: '2rem', paddingTop: 10 }}>{"Conferences"}</h1>
                  {info.publicationsConf.map((project, index) => (
                      <Box key={index} >
                         <Box className={'publi-authors'}
@@ -45,6 +38,9 @@ export default function Publications() {
                      
                   ))}
               </Stack>
+
+
+
       </Box>
       
     );

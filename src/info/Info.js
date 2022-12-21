@@ -139,15 +139,49 @@ export const info = {
         }
     ],
 
-    publications: [ // This is where your portfolio projects will be detailed
+    publicationsJournal: [ // This is where your portfolio projects will be detailed
         {
-            title: "Publie 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+            authors: "L Souquet, N Shvai, A Llanza, A Nakib.",
+            title: "Convolutional neural network architecture search based on fractal decomposition optimization algorithm.", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            journal_info: "Expert Systems with Applications 213, 118947., 2023.", // this should be a link to the **repository** of the project, where the code is hosted.
         },
         {
-            title: "Publie 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell"        }
+            authors: "L. Souquet, A. Nakib, E-G Talbi.",
+            title: "Fractal Decomposition Approach for continuous multi-objective optimization problems.", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            journal_info: "IEEE Access, vol. 8, 167604 - 167619, 2020", // this should be a link to the **repository** of the project, where the code is hosted.
+        },
+        {
+            authors: "A.Nakib, L. Souquet, E-G Talbi.",
+            title: "Parallel fractal decomposition based algorithm for big continuous optimization problems.", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            journal_info: "Journal of Parallel and Distributed Computing, vol. 133, pp. 297-306, 2019.", // this should be a link to the **repository** of the project, where the code is hosted.
+        },
+        {
+            authors: "A.Nakib, S. Ouchraa, N. Shvai, L. Souquet, E-G Talbi",
+            title: "Deterministic metaheuristic based on Fractal Decomposition for large-scale optimization.", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            journal_info: "Applied Soft Computing, vol. 61, pp. 468-485, 2017.", // this should be a link to the **repository** of the project, where the code is hosted.
+        }
+    ],
+
+    publicationsConf: [ // This is where your portfolio projects will be detailed
+        {
+            authors: "L Souquet, N Shvai, A Llanza, A Nakib.",
+            title: "Convolutional neural network architecture search based on fractal decomposition optimization algorithm.", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            journal_info: "Expert Systems with Applications 213, 118947., 2023.", // this should be a link to the **repository** of the project, where the code is hosted.
+        },
+        {
+            authors: "L. Souquet, A. Nakib, E-G Talbi.",
+            title: "Fractal Decomposition Approach for continuous multi-objective optimization problems.", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            journal_info: "IEEE Access, vol. 8, 167604 - 167619, 2020", // this should be a link to the **repository** of the project, where the code is hosted.
+        },
+        {
+            authors: "A.Nakib, L. Souquet, E-G Talbi.",
+            title: "Parallel fractal decomposition based algorithm for big continuous optimization problems.", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            journal_info: "Journal of Parallel and Distributed Computing, vol. 133, pp. 297-306, 2019.", // this should be a link to the **repository** of the project, where the code is hosted.
+        },
+        {
+            authors: "A.Nakib, S. Ouchraa, N. Shvai, L. Souquet, E-G Talbi",
+            title: "Deterministic metaheuristic based on Fractal Decomposition for large-scale optimization.", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            journal_info: "Applied Soft Computing, vol. 61, pp. 468-485, 2017.", // this should be a link to the **repository** of the project, where the code is hosted.
+        }
     ]
 }

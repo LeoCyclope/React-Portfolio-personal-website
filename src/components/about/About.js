@@ -54,8 +54,12 @@ export default function About() {
     return (
         <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
             <Terminal text={aboutMeText()}/>
-            <Terminal text={skillsText()}/>
-            <Terminal text={miscText()}/>
+
         </Box>
     )
 }
+
+/*
+            <Terminal text={skillsText()}/>
+            <Terminal text={miscText()}/>
+            */

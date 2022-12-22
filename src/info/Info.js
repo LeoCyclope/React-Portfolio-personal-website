@@ -72,7 +72,7 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "Hello! I'm Léo. I'm a Data Scientist Specialized in Computer Vision. Before that,  I Co-Founded a private school that trains Data Experts called Data ScienceTech Institute, was its Co-CEO External Relations for 5 years and obtain my Ph.D. in AI in parallel. I have been teaching various technical subjects at University level for almost 10 years and still enjoying it very much.",
     skills:
         {
             proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
@@ -167,6 +167,30 @@ export const info = {
             authors: "L. Souquet, A. Nakib and E. G. Talbi.",
             title: "Algorithme basé sur la décomposition fractale appliqué aux problèmes multi-objectifs.", 
             journal_info: "ROADEF’2020, 19-21 Fév. 2020, Montpellier, France.", 
+        }
+    ],
+
+    WorkExperience: [ // This is where your portfolio projects will be detailed
+        {
+            position: "Senior Data Scientist",
+            company: "Fujitsu",
+            dates: "September 2022 - Decembre 2022",
+            location: "Paris, France",
+            tasks: [
+                "Development of AI Solutions for Fujitsu Customers"
+            ],
+        },
+        {
+            position: "Data Scientist",
+            company: "Cyclope.ai (Vinci Autoroutes start up)",
+            dates: "October 2020 - August 2022 ",
+            location: "Paris, France",
+            tasks: [
+                "<b>Design, Development, and Deployment</b> of AI-based softwares for Smart Cities and Traffic Management",
+                "<b>Involved in all aspects of a project</b> : from Design of the architecture (microservices) to deployment in production of final solutions.",
+                "Solution running on servers (V100 GPUs) as well as <b>embedded devices</b> (NVidia Jetsons and AGX).",
+                "<b>Training</b> models for <b>Object detection</b> applied to (real-time) vehicules, humans, faces etc. and <b>Segmentation</b> for lane detection and road separation."
+            ]
         }
     ]
 }

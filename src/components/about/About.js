@@ -49,6 +49,7 @@ export default function About() {
             </ul>
         </>;
     }
+    
 
     return (
         <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>

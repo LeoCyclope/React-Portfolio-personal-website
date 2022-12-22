@@ -14,10 +14,10 @@ export default function Publications() {
                  {info.publicationsJournal.map((project, index) => (
                      <Box key={index} >
                         <Box className={'publi-authors'}
-                          alignItems={'left'} justifyContent={'left'} fontSize={'1.5rem'} py={'1rem'}>
+                          alignItems={'left'} justifyContent={'left'}  py={'0.5rem'}>
                             {project.authors}
                         </Box>
-                        <p style={{ fontWeight: 'bold' }} >{project.title}</p>
+                        <p style={{ fontWeight: 'bold', fontSize: '1.2rem'}}  >{project.title}</p>
                         <p style={{ fontStyle: 'italic' }} >{project.journal_info}</p>
                      
                   </Box>
@@ -28,10 +28,10 @@ export default function Publications() {
                  {info.publicationsConf.map((project, index) => (
                      <Box key={index} >
                         <Box className={'publi-authors'}
-                          alignItems={'left'} justifyContent={'left'} fontSize={'1.5rem'} py={'1rem'}>
+                          alignItems={'left'} justifyContent={'left'}  py={'0.5rem'}>
                             {project.authors}
                         </Box>
-                        <p style={{ fontWeight: 'bold' }} >{project.title}</p>
+                        <p style={{ fontWeight: 'bold',fontSize: '1.2rem' }} >{project.title}</p>
                         <p style={{ fontStyle: 'italic' }} >{project.journal_info}</p>
                      
                   </Box>

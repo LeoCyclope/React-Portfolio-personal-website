@@ -17,8 +17,7 @@ export default function Publications() {
     return (
       <Container maxWidth="lg">
         <Box sx={{ flexGrow: 1, paddingTop: 5 }} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} textAlign={'left'} >
-        
-        
+  
           <Grid container spacing={2}>
             <Grid item xs={4}>
                 Work Experiences

@@ -9,6 +9,8 @@ import Resume from "./resume/Resume";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
 
+import MangaSketch from "./mangaSketch/MangaSketch";
+
 export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(false);
 
@@ -30,6 +32,7 @@ export default function BaseLayout() {
                   <Route exact path={'/portfolio'} element={<Portfolio/>}/>
                   <Route exact path={'/resume'} element={<Resume/>}/>
                   <Route exact path={'/publications'} element={<Publications/>}/>
+                  <Route exact path={'/mangaSketch'} element={<MangaSketch/>}/>
                </Routes>
             </Grid>
             <Grid item>

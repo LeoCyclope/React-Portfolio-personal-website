@@ -13,7 +13,7 @@ const links = [
     },
     
     {
-        name: 'About Me',
+        name: 'AboutMe',
         to: '/about',
         active: 'about'
     },
@@ -41,8 +41,15 @@ const links = [
         name: 'Publications',
         to: '/publications',
         active: 'publications'
+    },
+    {
+        name: 'MangaSketch',
+        to: '/mangaSketch',
+        active: 'mangaSketch'
     }
 ]
+
+
 
 export default function Navbar({darkMode, handleClick}) {
     const location = useLocation()

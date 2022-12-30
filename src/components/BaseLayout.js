@@ -8,7 +8,6 @@ import Publications from "./publications/Publications";
 import Resume from "./resume/Resume";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
-
 import MangaSketch from "./mangaSketch/MangaSketch";
 
 export default function BaseLayout() {

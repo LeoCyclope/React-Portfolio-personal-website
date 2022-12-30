@@ -4,9 +4,15 @@ import {Box} from "@mui/material";
 import { useState, useRef } from 'react';
 import axios from "axios";
 
+import Link from '@mui/material/Link';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+import { ImgComparisonSlider } from '@img-comparison-slider/react';
+//https://github.com/sneas/img-comparison-slider/tree/master/packages/react
 
-//Insired from https://www.codemzy.com/blog/react-drag-drop-file-upload
-
+//Drag and drop Module Inspired from https://www.codemzy.com/blog/react-drag-drop-file-upload
+import Input from '@mui/material/Input';
+import { FormControl } from '@mui/material';
 
 
 // drag drop file component
@@ -19,6 +25,8 @@ function DragDropFile() {
 
   // file state
   const [fileInput, setfileInput] = useState(null);
+
+  const [fileOriginalInput, setfileOriginalInput] = useState(null);
 
   const [tempUrl, setTempUrl] = useState(null);
 
@@ -66,19 +74,35 @@ function DragDropFile() {
   };
   
 // triggers the input when the button is clicked
-  const onButtonClick = () => {
-    inputRef.current.click();
+  const onButtonClick = (e) => {
+
+    //Need to check this later
+    /*
+    if (fileInput) {
+      handleSubmit(e);
+    }
+    else {
+      inputRef.current.click();
+    }
+    */
+    
   };
 
   
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    console.log("Submit");
+    setTempUrl(null);
+    
     //check the size file of the file input
     if (fileInput.size >= 5000000) {
       alert("File size is too big, must be less than 5MB !");
       setTempUrl(null);
       return;
     }
+
+    setfileOriginalInput(fileInput);
 
     
 
@@ -107,31 +131,70 @@ function DragDropFile() {
     .catch(function (error) {
       console.log(error);
     });
+
+    
+
   }
   
   return (
 
     <Box sx={{ flexGrow: 1, paddingTop: 5 }} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} textAlign={'left'} >
+
+      <Box>
       <form id="form-file-upload" onDragEnter={handleDrag} onSubmit={handleSubmit}>
         <input ref={inputRef} type="file" id="input-file-upload" multiple={true} onChange={handleChange} accept="image/jpeg, image/jpg, image/png" />
         <label id="label-file-upload" htmlFor="input-file-upload" className={dragActive ? "drag-active" : "" }>
           <div>
             <p>Drag and drop your file here or</p>
-            <button className="upload-button" onClick={onButtonClick}>Upload a file</button>
+            <div className="upload-button" onClick={onButtonClick}>Select a file</div>
+            <Button type="submit" variant="contained" endIcon={<SendIcon />}>
+        Upload file
+      </Button>
+            
           </div> 
         </label>
         { dragActive && <div id="drag-file-element" onDragEnter={handleDrag} onDragLeave={handleDrag} onDragOver={handleDrag} onDrop={handleDrop}></div> }
-        <button type="submit">Upload</button>
+        
+        
       </form>
-      {tempUrl &&
-      <div className="image" >
-          <img style={{ height: 500 }} src={tempUrl} alt="Result of the Process"/>
-          <a href={tempUrl}>Click Here to Download</a>
-      </div>
-    }
+
     </Box>
+
+    {fileInput &&
+          <div className="image" >
+            <h2>Selected Image</h2>
+              <img style={{ height: 500 }} src={URL.createObjectURL(fileInput)} alt="Init  of the Process"/>
+            </div>
+        } 
+
+    
+    {tempUrl &&
+    <Box>
+      <div className="image" >
+         <ImgComparisonSlider>
+  <img slot="first" src={URL.createObjectURL(fileOriginalInput)} />
+  <img slot="second" src={tempUrl} />
+  </ImgComparisonSlider>
+      
+      </div>
+      <Link href="{tempUrl}">Download Image</Link>
+      </Box>
+    } 
+    <Box>
+
+  </Box>
+  </Box>
      
   );
 };
 
 export default DragDropFile; 
+
+/*
+{fileInput &&
+  <ImgComparisonSlider>
+  <img slot="first" src={URL.createObjectURL(fileOriginalInput)} />
+  <img slot="second" src={tempUrl} />
+</ImgComparisonSlider>
+}
+*/

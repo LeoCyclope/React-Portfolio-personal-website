@@ -4,6 +4,7 @@ import Toggler from "./home/Toggler";
 import {Link, useLocation} from "react-router-dom";
 import {Box} from "@mui/material";
 import {info} from "../info/Info";
+import AppBar from '@mui/material/AppBar';
 
 const links = [
     {

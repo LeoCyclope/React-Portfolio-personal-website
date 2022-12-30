@@ -1299,6 +1299,13 @@
   "resolved" "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   "version" "1.2.1"
 
+"@img-comparison-slider/react@^7.8.0":
+  "integrity" "sha512-rzPuISNEjzuFdORWwBSRztCxdtTQuD+a3Sc1Lb0TenjSg/vLn1oBLlXb6R0gDBFQBm8uV3nbyHRqJ7E+otXcpA=="
+  "resolved" "https://registry.npmjs.org/@img-comparison-slider/react/-/react-7.8.0.tgz"
+  "version" "7.8.0"
+  dependencies:
+    "img-comparison-slider" "~7.7.0"
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   "integrity" "sha512-VjeHSlIzpv/NyD3N0YuHfXOPDIixcA1q2ZV98wsMqcYlPmv2n3Yb2lYP9XMElnaFVXg5A7YLTeLu6V84uQDjmQ=="
   "resolved" "https://registry.npmjs.org/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz"
@@ -5292,6 +5299,11 @@
   "integrity" "sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ=="
   "resolved" "https://registry.npmjs.org/ignore/-/ignore-5.2.0.tgz"
   "version" "5.2.0"
+
+"img-comparison-slider@~7.7.0":
+  "integrity" "sha512-xL01b6bd2rAXfYTT44Lq0nYmrwB9RESfkJVdcgbRB/PUsYfkqEr2J4oGYWFm5BYZ1FoSiH+uW2+3500qCF0dbA=="
+  "resolved" "https://registry.npmjs.org/img-comparison-slider/-/img-comparison-slider-7.7.2.tgz"
+  "version" "7.7.2"
 
 "immer@^9.0.7":
   "integrity" "sha512-2eB/sswms9AEUSkOm4SbV5Y7Vmt/bKRwByd52jfLkW4OLYeaTP3EEiJ9agqU0O/tq6Dk62Zfj+TJSqfm1rLVGQ=="

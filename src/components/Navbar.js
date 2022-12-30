@@ -45,7 +45,7 @@ const links = [
     },
     {
         name: 'MangaSketch',
-        to: '/mangaSketch',
+        to: '/convert-image-manga-pencil-sketch-style',
         active: 'mangaSketch'
     }
 ]

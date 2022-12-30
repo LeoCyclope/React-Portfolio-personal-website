@@ -31,7 +31,7 @@ export default function BaseLayout() {
                   <Route exact path={'/portfolio'} element={<Portfolio/>}/>
                   <Route exact path={'/resume'} element={<Resume/>}/>
                   <Route exact path={'/publications'} element={<Publications/>}/>
-                  <Route exact path={'/mangaSketch'} element={<MangaSketch/>}/>
+                  <Route exact path={'/convert-image-manga-pencil-sketch-style'} element={<MangaSketch/>}/>
                </Routes>
             </Grid>
             <Grid item>

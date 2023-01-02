@@ -68,16 +68,16 @@ export const info = {
             icon: "fa fa-twitter",
             label: 'twitter'
         }
-// Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-// Just change the links so that they lead to your social profiles.
+        // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
+        // Just change the links so that they lead to your social profiles.
 
     ],
     bio: "Hello! I'm Léo. I'm a Data Scientist Specialized in Computer Vision. Before that,  I Co-Founded a private school that trains Data Experts called Data ScienceTech Institute, was its Co-CEO External Relations for 5 years and obtain my Ph.D. in AI in parallel. I have been teaching various technical subjects at University level for almost 10 years and still enjoying it very much.",
     skills:
-        {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator']
-        }
+    {
+        proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
+        exposedTo: ['nodejs', 'python', 'adobe illustrator']
+    }
     ,
     hobbies: [
         {
@@ -96,8 +96,52 @@ export const info = {
             label: 'cooking',
             emoji: '🌶'
         }
-// Same as above, change the emojis to match / relate to your hobbies or interests.
-// You can also remove the emojis if you'd like, I just think they look cute :P
+        // Same as above, change the emojis to match / relate to your hobbies or interests.
+        // You can also remove the emojis if you'd like, I just think they look cute :P
+    ],
+
+    infoMenu: [ // This is where your portfolio projects will be detailed
+    {
+        name: 'Home',
+        to: '/',
+        active: 'home'
+    },
+    
+    {
+        name: 'AboutMe',
+        to: '/about',
+        active: 'about'
+    },
+    
+    {
+        name: "LS",
+        type: 'initials',
+        to: '/',
+        active: 'home'
+    },
+    /*
+    {
+        name: 'Portfolio',
+        to: '/portfolio',
+        active: 'portfolio'
+    },
+    */
+    
+    {
+        name: 'Resume',
+        to: '/resume',
+        active: 'resume'
+    },
+    {
+        name: 'Publications',
+        to: '/publications',
+        active: 'publications'
+    },
+    {
+        name: 'MangaSketch',
+        to: '/convert-image-manga-pencil-sketch-style',
+        active: 'mangaSketch'
+    }
     ],
 
     portfolio: [ // This is where your portfolio projects will be detailed
@@ -165,8 +209,8 @@ export const info = {
     publicationsConf: [ // This is where your portfolio projects will be detailed
         {
             authors: "L. Souquet, A. Nakib and E. G. Talbi.",
-            title: "Algorithme basé sur la décomposition fractale appliqué aux problèmes multi-objectifs.", 
-            journal_info: "ROADEF’2020, 19-21 Fév. 2020, Montpellier, France.", 
+            title: "Algorithme basé sur la décomposition fractale appliqué aux problèmes multi-objectifs.",
+            journal_info: "ROADEF’2020, 19-21 Fév. 2020, Montpellier, France.",
         }
     ],
 

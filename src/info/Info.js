@@ -211,7 +211,37 @@ export const info = {
             authors: "L. Souquet, A. Nakib and E. G. Talbi.",
             title: "Algorithme basé sur la décomposition fractale appliqué aux problèmes multi-objectifs.",
             journal_info: "ROADEF’2020, 19-21 Fév. 2020, Montpellier, France.",
-        }
+        },
+        {
+            authors: "L. Souquet, N. Shvai, A. Llanza and A. Nakib.",
+            title: "Hyperparameters optimization for neural network training using Fractal Decomposition-based Algorithm.",
+            journal_info: "IEEE CEC, July 19-24, 2020, Glasgow, Scotland.",
+        },
+        {
+            authors: "L. Souquet, N. Shvai, A. Llanza and A. Nakib.",
+            title: "HyperFDA: A Bi-level optimization approach to Neural Architecture Search and Hyperparameters Optimization with Fractal Decomposition-based Algorithm.",
+            journal_info: "GECCO 2020. July 11-15, 2020, Online.",
+        },
+        {
+            authors: "L. Souquet, A. Nakib et al.",
+            title: "Multi-objective optimization based",
+            journal_info: "In Proc of XIII Metaheuristics International Conference, pp.84-`86, July 28-31, 2019, Cartagena, Colombia.",
+        },
+        {
+            authors: "L. Souquet, A. Nakib and E. G. Talbi.",
+            title: "Multi-node environment strategy for Parallel Deterministic Multi-Objective Fractal Decomposition",
+            journal_info: " in Proc. of 13th International Conference on Multiple Objective Programming and Goal Programming (MOPGP 2019), Oct. 28-31 2019, Marrakech, Morroco..",
+        },
+        {
+            authors: "L. Souquet, A. Nakib.",
+            title: "Métaheuristique parallèle basée sur la décomposition fractale pour la résolution de problème continue à grande dimension.",
+            journal_info: "ROADEF’2019, 19-21 Fév. 2018, Le Havre, France.",
+        },
+        {
+            authors: "L. Souquet, A. Nakib and E. G. Talbi.",
+            title: "Métaheuristique basée sur la décomposition fractale pour l’optimisation continue.",
+            journal_info: "ROADEF’2018, 21-23 Fév. 2018, Lorient, France.",
+        },
     ],
 
     WorkExperience: [ // This is where your portfolio projects will be detailed
@@ -234,6 +264,27 @@ export const info = {
                 "<b>Involved in all aspects of a project</b> : from Design of the architecture (microservices) to deployment in production of final solutions.",
                 "Solution running on servers (V100 GPUs) as well as <b>embedded devices</b> (NVidia Jetsons and AGX).",
                 "<b>Training</b> models for <b>Object detection</b> applied to (real-time) vehicules, humans, faces etc. and <b>Segmentation</b> for lane detection and road separation."
+            ]
+        },
+        {
+            position: "Co-Founder and Co-CEO",
+            company: "Data ScienceTech Institute (DSTI)",
+            dates: "January 2014 - October 2020 ",
+            location: "Paris, France",
+            tasks: [
+                "CEO in charge of External Relations and Marketing",
+                "Director of the Paris campus (5 staff and 60 students).",
+                "Responsible for our industrial parteners (AWS, SAS, Crédit Agricole, etc.)",
+                "In charge of DSTI Labs, R&D entity for research in Data Science and AI"
+            ]
+        },
+        {
+            position: "Founder and Co-CEO",
+            company: "makeITdynamic (mITd)",
+            dates: "January 2012 - January 2014",
+            location: "Nice, France",
+            tasks: [
+                "IT consulting company specialised in setting-up CRM for SMEs",
             ]
         }
     ]

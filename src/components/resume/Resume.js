@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect}  from 'react';
 import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 import Stack from '@mui/material/Stack';
@@ -12,6 +12,10 @@ import ListItem from '@mui/material/ListItem';
 
 export default function Publications() {
 
+  useEffect(() => {
+    document.title = "Leo Souquet | My Resume";  
+  }, []);
+  
 
 
     return (

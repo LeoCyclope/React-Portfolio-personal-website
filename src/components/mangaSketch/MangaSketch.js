@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect}  from 'react';
 import './FilesDragAndDrop.scss';
 import { Box } from "@mui/material";
 import { useState, useRef } from 'react';
@@ -15,8 +15,6 @@ import Grid from '@mui/material/Grid';
 
 import sample1 from './sampleImgs/me.jpg';
 import sample2 from './sampleImgs/my_image.jpg';
-
-import { Link } from 'react-router-dom';
 
 
 // drag drop file component
@@ -140,8 +138,15 @@ function DragDropFile() {
 
   }
 
+  useEffect(() => {
+    document.title = "Image to Manga | Free Online Converting Tool";  
+  }, []);
+
 
   return (
+
+
+    
 
     <Container maxWidth="lg">
 
@@ -165,27 +170,27 @@ function DragDropFile() {
               <form id="form-file-upload" onDragEnter={handleDrag} onSubmit={handleSubmit}>
                 <input ref={inputRef} type="file" id="input-file-upload" /*multiple={true}*/ onChange={handleChange} accept="image/jpeg, image/jpg, image/png" />
                 <label id="label-file-upload" htmlFor="input-file-upload" className={dragActive ? "drag-active" : ""}>
-                  
-                  {! fileInput && 
-                    <div>
-                    <p>Drag and drop your file here</p>
-                    <div className="upload-button" onClick={onButtonClick}>Select a file</div>
-                    </div>
-                    
-                  }
-                  {fileInput && 
-                  <div>
-                    <p><b>Image Received</b></p>
-                    <p>Drag if click if you want to change file</p>
-                    <Button type="submit" variant="contained" endIcon={<SendIcon />}>
-                      Transform my image into MANGA!
-                    </Button>
-                    </div>
-                  }
-                    
-                    
 
-                  
+                  {!fileInput &&
+                    <div>
+                      <p>Drag and drop your file here</p>
+                      <div className="upload-button" onClick={onButtonClick}>Select a file</div>
+                    </div>
+
+                  }
+                  {fileInput &&
+                    <div>
+                      <p><b>Image Received</b></p>
+                      <p>Drag if click if you want to change file</p>
+                      <Button type="submit" variant="contained" endIcon={<SendIcon />}>
+                        Transform my image into MANGA!
+                      </Button>
+                    </div>
+                  }
+
+
+
+
                 </label>
                 {dragActive && <div id="drag-file-element" onDragEnter={handleDrag} onDragLeave={handleDrag} onDragOver={handleDrag} onDrop={handleDrop}></div>}
 
@@ -210,19 +215,19 @@ function DragDropFile() {
 
             {tempUrl &&
               <Box >
-              
 
-                
-                
-                
+
+
+
+
                 <ImgComparisonSlider>
-                    <img style={{ maxHeight: '100% '}} slot="first" src={URL.createObjectURL(fileOriginalInput)} />
-                    <img style={{ maxHeight: '100%' }} slot="second" src={tempUrl} />
-                  </ImgComparisonSlider>
-                  <Button variant='contained' component="label">
-                <a href={tempUrl} target="__blank">Click Here to Download Image</a> 
-                  </Button>
-              
+                  <img style={{ maxHeight: '100% ' }} slot="first" src={URL.createObjectURL(fileOriginalInput)} />
+                  <img style={{ maxHeight: '100%' }} slot="second" src={tempUrl} />
+                </ImgComparisonSlider>
+                <Button variant='contained' component="label">
+                  <a href={tempUrl} target="__blank">Click Here to Download Image</a>
+                </Button>
+
               </Box>
             }
 

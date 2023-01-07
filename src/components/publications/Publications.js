@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect}  from 'react';
 import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 import Stack from '@mui/material/Stack';
 
 export default function Publications() {
+
+  useEffect(() => {
+    document.title = "Leo Souquet | My Journals and Conferences Publications";  
+  }, []);
+  
+
+
     return (
         <Box sx={{ flexGrow: 1, paddingTop: 5 }} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} textAlign={'left'} >
         

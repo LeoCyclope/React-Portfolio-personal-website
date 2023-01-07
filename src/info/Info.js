@@ -54,17 +54,17 @@ export const info = {
     ],
     socials: [
         {
-            link: "https://github.com",
+            link: "https://github.com/LeoSouquet",
             icon: "fa fa-github",
             label: 'github'
         },
         {
-            link: "https://linkedin.com",
+            link: "https://www.linkedin.com/in/leosouquet/",
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
         {
-            link: "https://twitter.com",
+            link: "https://twitter.com/LeoSouquet",
             icon: "fa fa-twitter",
             label: 'twitter'
         }

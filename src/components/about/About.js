@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect}  from 'react';
 import Style from './About.module.scss';
 import Terminal from "./Terminal";
 import {Box} from "@mui/material";
@@ -6,6 +6,13 @@ import {info} from "../../info/Info";
 
 
 export default function About() {
+
+    useEffect(() => {
+        document.title = "Leo Souquet | About me";  
+      }, []);
+  
+      
+
     const firstName = info.firstName.toLowerCase()
 
     function aboutMeText() {

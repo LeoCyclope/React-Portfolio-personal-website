@@ -225,7 +225,7 @@ function DragDropFile() {
                   <img style={{ maxHeight: '100%' }} slot="second" src={tempUrl} />
                 </ImgComparisonSlider>
                 <Button variant='contained' component="label">
-                  <a href={tempUrl} target="__blank">Click Here to Download Image</a>
+                  <a href={tempUrl} target="__blank" download="mange_image.jpg">Click Here to Download Image</a>
                 </Button>
 
               </Box>

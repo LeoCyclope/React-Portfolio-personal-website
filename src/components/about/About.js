@@ -8,7 +8,7 @@ import {info} from "../../info/Info";
 export default function About() {
 
     useEffect(() => {
-        document.title = "Leo Souquet | About me";  
+        document.title = "Leo Souquet | My Personal Website with Manga Sketch Converter";  
       }, []);
   
       

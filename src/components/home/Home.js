@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import Style from './Home.module.scss';
 import me from '../../img/self.png';
 import classNames from 'classnames';
@@ -8,6 +8,10 @@ import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 
 export default function Home() {
+
+   useEffect(() => {
+      document.title = "Leo Souquet | About me";  
+    }, []);
 
    return (
       <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'row'}} alignItems={'center'}
